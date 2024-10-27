@@ -1,0 +1,10 @@
+/* The CSS for the main layout*/
+* {
+  box-sizing: border-box;
+}
+.leftblock {
+	width: 33%;
+}
+.rightblock{
+	width: 67%;
+}
