@@ -2,9 +2,28 @@
 * {
   box-sizing: border-box;
 }
-.leftblock {
-	width: 33%;
+body {
+	max-width: 90%;
+	margin: auto;
 }
-.rightblock{
+
+.logobox {
+	width: 33%;
+	float: left;
+	border: solid;
+}
+.topnav {
 	width: 67%;
+	float: left;
+	border: dotted;
+}
+.sidebar { /* sidebar */
+	width: 33%;
+	float: left;
+	border: double;
+}
+.mainright { /* Main content */
+	width: 67%;
+	float: left;
+	border: dashed;
 }
