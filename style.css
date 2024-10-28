@@ -5,33 +5,44 @@
 body {
 	max-width: 90%;
 	margin: auto;
+	background-color: beige;
 }
 /* The big dividers */
 .logobox {
-	width: 33%;
+	width: 32%;
 	float: left;
 	border: solid;
-	height: 50px; /* keeping this and topnav the same height keeps things from getting misaligned */
+	height: 70px; /* keeping this and topnav the same height keeps things from getting misaligned */
+	margin-right: 1%;
+	margin-bottom: 1%;
+	margin-top: 1%;
 }
 .topnav {
 	width: 67%;
 	float: left;
-	border: dotted;
-	height: 50px;
+	background-color: #222;
+	height: 70px;
+	margin-bottom: 1%;
+	margin-top: 1%;
 }
 .sidebar { /* sidebar */
-	width: 33%;
+	width: 32%;
 	float: left;
 	border: double;
+	margin-right: 1%;
+	padding: 0 10px;
 }
 .mainright { /* Main content */
 	width: 67%;
 	float: left;
 	border: dashed;
+	padding: 0 10px;
 }
 /* Main text classes */
 .path { /* The "Windows > Users > Add/Remove" thingie */
 	width: 100%;
+	font-family: Oxanium;
+	font-weight: normal;
 }
 /* sidebar classes */
 .topicli{
@@ -49,10 +60,13 @@ body {
 .headeritem{
 	float: right; /* right-aligns but reverses order */
 	display: block;
-	padding: 14px 16px;
+	color: white;
+	padding: 18px 16px;
 	text-align: center;
 	text-decoration: none; /* Makes the link underline not show */
+	font-family: Oxanium;
+	font-size: 1.6rem;
 }
 .headeritem:hover {
-	background-color: yellow;
+	background-color: #000;
 }
