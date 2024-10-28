@@ -6,16 +6,18 @@ body {
 	max-width: 90%;
 	margin: auto;
 }
-
+/* The big dividers */
 .logobox {
 	width: 33%;
 	float: left;
 	border: solid;
+	height: 50px; /* keeping this and topnav the same height keeps things from getting misaligned */
 }
 .topnav {
 	width: 67%;
 	float: left;
 	border: dotted;
+	height: 50px;
 }
 .sidebar { /* sidebar */
 	width: 33%;
@@ -26,4 +28,31 @@ body {
 	width: 67%;
 	float: left;
 	border: dashed;
+}
+/* Main text classes */
+.path { /* The "Windows > Users > Add/Remove" thingie */
+	width: 100%;
+}
+/* sidebar classes */
+.topicli{
+	list-style-type: disc;
+}
+.subli{
+	list-style-type: circle;
+	margin-left: 10px;
+}
+/* Topnav classes */
+.headerbar{
+	list-style-type: none;
+	margin: 0px;
+}
+.headeritem{
+	float: right; /* right-aligns but reverses order */
+	display: block;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none; /* Makes the link underline not show */
+}
+.headeritem:hover {
+	background-color: yellow;
 }
