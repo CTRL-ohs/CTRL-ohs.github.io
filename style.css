@@ -7,6 +7,10 @@ body {
 	margin: auto;
 	background-color: beige;
 }
+a {
+	text-decoration: inherit;
+	color: DeepSkyBlue;
+}
 /* The big dividers */
 .logobox {
 	width: 32%;
@@ -43,15 +47,46 @@ body {
 	width: 100%;
 	font-family: Oxanium;
 	font-weight: normal;
+	text-decoration: none;
+	color: gray;
 }
 /* sidebar classes */
-.topicli{
-	list-style-type: disc;
+
+
+ /* Remove default bullets */
+ul, #sidetree {
+  list-style-type: none;
 }
-.subli{
-	list-style-type: circle;
-	margin-left: 10px;
+/* Remove margins and padding from the parent ul */
+#sidetree {
+  margin: 0;
+  padding: 0;
 }
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+}
+.caret::before {
+  content: "\25B6"; /* codepoint for the caret */
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+/* Hide the nested list */
+.nested {
+  display: none;
+}
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+} 
+
+
 /* Topnav classes */
 .headerbar{
 	list-style-type: none;
