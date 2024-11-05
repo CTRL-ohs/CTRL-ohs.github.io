@@ -5,7 +5,7 @@
 body {
 	max-width: 90%;
 	margin: auto;
-	background-color: beige;
+	background-color: DarkSlateGray;
 }
 a {
 	text-decoration: inherit;
@@ -15,14 +15,18 @@ a {
 .logobox {
 	width: 32%;
 	float: left;
-	border: solid;
+	border: outset #222;
+	border-radius: 10px;
 	height: 70px; /* keeping this and topnav the same height keeps things from getting misaligned */
 	margin-right: 1%;
 	margin-bottom: 1%;
 	margin-top: 1%;
+	background-color: #222;
 }
 .topnav {
 	width: 67%;
+	border: outset #222;
+	border-radius: 10px;
 	float: left;
 	background-color: #222;
 	height: 70px;
@@ -35,12 +39,14 @@ a {
 	border: double;
 	margin-right: 1%;
 	padding: 0 10px;
+	background-color: white;
 }
 .mainright { /* Main content */
 	width: 67%;
 	float: left;
-	border: dashed;
+	border: double;
 	padding: 0 10px;
+	background-color: white;
 }
 /* Main text classes */
 .path { /* The "Windows > Users > Add/Remove" thingie */
@@ -96,11 +102,12 @@ ul, #sidetree {
 	float: right; /* right-aligns but reverses order */
 	display: block;
 	color: white;
-	padding: 18px 16px;
+	padding: 16px 16px;
 	text-align: center;
 	text-decoration: none; /* Makes the link underline not show */
 	font-family: Oxanium;
 	font-size: 1.6rem;
+	border-radius: 10px;
 }
 .headeritem:hover {
 	background-color: #000;
