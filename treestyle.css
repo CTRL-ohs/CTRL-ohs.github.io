@@ -1,0 +1,23 @@
+/* sidebar classes */
+/* Remove default bullets */
+a {
+	text-decoration: none;
+	color: DeepSkyBlue;
+}
+ul, #sidetree {
+  list-style-type: none;
+}
+/* Remove margins and padding from the parent ul */
+#sidetree {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: Oxanium;
+}
+/* Style the caret/arrow */
+.caret::before {
+  content: "\25B6"; /* codepoint for the caret */
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}

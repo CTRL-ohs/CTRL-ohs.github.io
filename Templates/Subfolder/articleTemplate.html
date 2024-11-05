@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!-- Article Template -->
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,30 +20,13 @@
 	  <li><a class="headeritem" href="../../Linux">Linux</a></li>
 	  <li><a class="headeritem" href="../../Windows">Windows</a></li> <!-- ../ means go up a level -->
 	  <li><a class="headeritem" href="oogle.com">Home</a></li>
-	  
-	  
-	  
 	</ul>
   </div>
   
-  <div class="sidebar"> <!-- and this is where the sidebar sits -->
-	<ul id="sidetree">
-	  <li><span class="caret">Windows</span>
-	    <ul class="nested">
-		  <li><span class="caret">Users
-		    <ul class="nested">
-			  <li>Add/Remove</li>
-			  <li>Change Type</li>
-			</ul>
-		  </li>
-		</ul>
-	  </li>
-	</ul>
-    <script src="../../TreeScript.js"></script> <!-- needs to be at the bottom so that it happens after the html it affects loads in -->
-  </div>
+  <iframe class='sidebar' src='../../tree.html'></iframe>
   
   <div class="mainright"> <!-- This is gonna be where all the main content and the header bar sit -->
-    <h2 class='path'><a href='../'>Templates</a> > <a href='index.html'>Subfolder</a> > Add/Remove</h2>
+    <h2 class='path'><a href='../'>Templates</a> > <a href='index.html'>Subfolder</a> > Article</h2>
 	<p>textextextet xte xte xte xtte tx te xte xte txte xtte xt extx tte xtete xte xtetx extetx tetxe tx tex tex tet x</p>
   </div>
 </body>
