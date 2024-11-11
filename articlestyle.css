@@ -11,6 +11,12 @@ a {
 	text-decoration: inherit;
 	color: DeepSkyBlue;
 }
+
+@media only screen and (max-width: 768px) { /* <Mobile> */
+
+} /* <Mobile> */
+
+@media only screen and (min-width: 768px) { /* <Desktop> */
 /* The big dividers */
 .logobox {
 	width: 32%;
@@ -79,3 +85,4 @@ a {
 .headeritem:hover {
 	background-color: #000;
 }
+} /* </Desktop> */
