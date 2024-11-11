@@ -38,6 +38,13 @@ a {
 	padding: 0 10px;
 	background-color: white;
 }
+.path { /* The "Windows > Users > Add/Remove" thingie */
+	width: 100%;
+	font-family: Oxanium;
+	font-weight: normal;
+	text-decoration: none;
+	color: gray;
+}
 }
 
 /*---------Desktop---------*/
