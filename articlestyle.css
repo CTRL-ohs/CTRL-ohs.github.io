@@ -1,9 +1,9 @@
 /* The CSS for the main layout*/
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 body {
-	max-width: 90%;
+	max-width: 95%;
 	margin: auto;
 	background-color: DarkSlateGray;
 }
@@ -12,11 +12,40 @@ a {
 	color: DeepSkyBlue;
 }
 
-@media only screen and (max-width: 768px) { /* <Mobile> */
+/*---------Mobile----------*/
 
-} /* <Mobile> */
+@media only screen and (max-width: 768px) {
+.logobox {
+	width: 100%;
+	border: outset #222;
+	border-radius: 10px;
+	height: 70px;
+	margin-bottom: 10px;
+	margin-top: 1%;
+	background-color: #222;
+	color: white;
+}
+.topnav {
+	display: none;
+}
+.sidebar { /* TODO: make this show up as an overlay when you hit a button */
+	display: none;
+}
+.mainright {
+	width: 100%;
+	border: solid;
+	border-radius: 10px;
+	padding: 0 10px;
+	background-color: white;
+}
+}
+
+/*---------Desktop---------*/
 
 @media only screen and (min-width: 768px) { /* <Desktop> */
+body {
+	max-width: 90%;
+}
 /* The big dividers */
 .logobox {
 	width: 32%;
