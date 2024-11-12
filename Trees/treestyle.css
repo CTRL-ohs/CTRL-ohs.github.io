@@ -14,6 +14,9 @@ ul, #sidetree {
   background-color: white;
   font-family: Oxanium;
 }
+.nested {
+	font-size: 90%;
+}
 /* Style the caret/arrow */
 .caret::before {
   content: "\25B6"; /* codepoint for the caret */
