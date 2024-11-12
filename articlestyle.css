@@ -22,6 +22,9 @@ a {
 h2 { /* used for section headings */
 	font-family: Oxanium;
 }
+hr {
+	clear: both;
+}
 /*---------Mobile----------*/
 
 @media only screen and (max-width: 768px) {
@@ -153,5 +156,17 @@ body {
 }
 .headeritem:hover {
 	background-color: #000;
+}
+.contents {
+	width: 33%; /* this and the float work to make it line up with the text on the left */
+	float: right;
+	border: dotted;
+	background-color: #eee;
+	margin-bottom: 10px;
+}
+#summary {
+	width: 66%;
+	float: left;
+	margin-top: 0;
 }
 } /* </Desktop> */
