@@ -19,6 +19,16 @@ a {
 	text-decoration: none;
 	color: gray;
 }
+.commands {
+	font-family: monospace;
+	border: 3px double white;
+	border-radius: 5px;
+	background-color: #111;
+	color: white;
+	padding: 0 5px;
+	overflow: auto;
+	white-space: nowrap; /* keeps me from needing like, 1500 &nbsp */
+}
 h2 { /* used for section headings */
 	font-family: Oxanium;
 }

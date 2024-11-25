@@ -30,7 +30,7 @@
 	<h1 class='path'><a href='../'>Windows</a> > <a href='index.html'>Users</a> > <span id="location">Add/Remove Users</span></h1>
     <hr>
     <h2 class="chapter" id="Chpt1">Overview</h2>
-	<p id="summary">Adding and removing users is the most basic form of user management. Without this ability, people who should have access to the computer can't gain access, and people who shouldn't can't have their access removed. Here we will go over various ways to add and remove users.</p>
+	<p id="summary">Setting the proper local security policies is very important for computer security. secpol.msc controls a large number of different policies, doing things ranging from setting password requirements to managing auditing.</p>
     <div class="contents">
 		<ul>
 			<li><a href="#Chpt1">Overview</a></li>
@@ -39,8 +39,25 @@
 		</ul>
 	</div>
 	<hr> <!-- Past this is the main content -->
-	<h2 class="Chapter" id="Chpt2">Computer Management</h2>
-	<p>Here is where the text telling you how to use Com Mgmt would be if i wrote it :3</p>
+	<h2 class="Chapter" id="Chpt2">Opening the Local Security Policy Editor</h2>
+	<hr>
+	<h2 class='Chapter' id='Chpt3'>Account Policies<h2>
+	<hr>
+	<h2 class='Chapter' id='Chpt4'>Local Policies<h2>
+	<hr>
+	<h2 class='Chapter' id='Chpt5'>Missing secpol.msc</h2>
+	<p>If you're unable to access secpol.msc, you may need to reinstall it. First, you should check whether you can access local policies through gpedit.msc. Open gpedit, then navigate to Computer Configuration > Windows Settings > Security Settings. This is effectively the same as opening secpol.msc, and contains the same options.</p>
+	<p>If that doesn't work, you may need to reinstall gpedit. To do so, copy the following commands into a txt file, and save it as a .bat file. Run this file as an administrator, and it will install gpedit.msc.</p>
+	<div class='commands'>
+		<p>
+			@echo&nbspoff<br>
+			pushd&nbsp"%~dp0"<br>
+			dir&nbsp/b&nbsp%SystemRoot%\\servicing\\Packages\\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum&nbsp>Files.txt<br>
+			dir&nbsp/b&nbsp%SystemRoot%\\servicing\\Packages\\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum&nbsp>>Files.txt<br>
+			for&nbsp/f&nbsp%%i&nbspin&nbsp(\'findstr&nbsp/i&nbsp.&nbspFiles.txt&nbsp2^>nul\')&nbspdo&nbspdism&nbsp/online&nbsp/norestart&nbsp/add-package:"%SystemRoot%\\servicing\\Packages\\%%i"<br>
+			pause
+		</p>
+	</div>
   </div>
   <div class="bottomnav"> <!-- A secret bonus menu for mobile users -->
     <ul class="bottombar">
